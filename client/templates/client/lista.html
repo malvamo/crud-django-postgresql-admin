@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Registros</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Listado de registros</h1>
+
+    <a href="{% url 'crear' %}">➕ Nuevo Registro</a>
+
+    <ul>
+        {% for reg in registros %}
+            <li>
+                {{ reg.nombre }} - {{ reg.correo }}
+                <a href="{% url 'editar' reg.pk %}">✏️ Editar</a>
+            </li>
+        {% empty %}
+            <li>No hay registros.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
