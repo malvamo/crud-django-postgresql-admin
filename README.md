@@ -6,9 +6,9 @@ Este proyecto es una aplicación web tipo CRUD (Create, Read, Update) para admin
 
 ## Tecnologías utilizadas
 
-- Python 3.10+
+- Python 3.13.5
 - Django 5.2.4
-- PostgreSQL
+- PostgreSQL 17.5.3 
 - Django ORM (protegido contra inyecciones SQL)
 - python-dotenv (para gestión segura de credenciales)
 
@@ -22,7 +22,7 @@ Antes de ejecutar este proyecto, asegúrate de tener lo siguiente instalado:
 |-----------------------|---------------|-----------------------------------------------|
 | Python 3.13.5         | Sí            | https://www.python.org/downloads/             |
 | PostgreSQL 17.5.3     | Sí            | https://www.postgresql.org/download/          |
-| Git 2.50.1            | Sí            | https://git-scm.com/downloads                 |
+| Git 2.50.1            | Opcional      | https://git-scm.com/downloads                 |
 
 ---
 
@@ -149,7 +149,7 @@ http://127.0.0.1:8000/admin/ → Panel administrativo
 
 ### Seguridad
 
-Las credenciales de la base de datos se guardan en un archivo .env y no se suben al repositorio.
+Las credenciales de la base de datos se guardan en un archivo .env y no se suben al repositorio, pero para efectos prácticos de este ejercicio se ha subido el archivo .env.
 El proyecto utiliza el ORM de Django, que protege automáticamente contra inyecciones SQL (SQLi).
 El formulario valida los campos antes de guardar y escapa contenido en las plantillas.
 
