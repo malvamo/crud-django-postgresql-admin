@@ -30,7 +30,7 @@ Antes de ejecutar este proyecto, asegúrate de tener lo siguiente instalado:
 
 ### 1. Clona el repositorio
 
-git clone https://github.com/malvamo/crud-django-postgresql.git
+git clone https://github.com/malvamo/crud-django-postgresql-admin.git
 
 cd crud-django-postgresql
 
